@@ -8,7 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <!--    app colors     -->
-    <color name="background_main">#FFFFFF</color>
-
+<!--    app colors     -->
+    <color name="background_main">#100012</color>
 </resources>
