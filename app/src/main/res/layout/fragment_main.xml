@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_main"
+    tools:context=".view.home.MainFragment">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/logo"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="@id/marginStart"
+        app:layout_constraintTop_toTopOf="@id/marginTop"
+        app:layout_constraintWidth_percent=".15" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_round_collections_24"
+        app:layout_constraintBottom_toBottomOf="@id/logo"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@id/marginEnd"
+        app:layout_constraintTop_toTopOf="@id/logo"
+        app:layout_constraintWidth_percent=".074" />
+
+    <TextView
+        android:id="@+id/text_join"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/join_meeting"
+        android:textColor="@color/text_primary"
+        app:layout_constraintEnd_toEndOf="@id/marginEnd"
+        app:layout_constraintStart_toStartOf="@id/marginStart"
+        app:layout_constraintTop_toBottomOf="@id/logo" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputJoinCode"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textColorHint="@color/input_hint"
+        app:boxBackgroundColor="@color/white"
+        app:boxCornerRadiusBottomEnd="7dp"
+        app:boxCornerRadiusBottomStart="7dp"
+        app:boxCornerRadiusTopEnd="7dp"
+        app:boxCornerRadiusTopStart="7dp"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeWidth="1.5dp"
+        app:errorTextColor="@color/white"
+        app:hintEnabled="false"
+        app:hintTextColor="@color/input_hint"
+        app:layout_constraintEnd_toEndOf="@id/marginEnd"
+        app:layout_constraintStart_toStartOf="@id/marginStart"
+        app:layout_constraintTop_toBottomOf="@id/text_join"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:startIconDrawable="@drawable/ic_round_link_24"
+        app:startIconTint="@color/white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_invite_code"
+            android:minHeight="52dp"
+            android:textColor="@color/input_text"
+            android:textColorHint="#757575" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/marginStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".04" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/marginEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".96" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/marginTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".015" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
