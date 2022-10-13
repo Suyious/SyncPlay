@@ -8,10 +8,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <!--    app colors     -->
-    <color name="background_main">#FFFFFF</color>
-    <color name="icon_shade">#55225D</color>
-    <color name="text_primary">#000000</color>
-    <color name="input_hint">#80000000</color>
-    <color name="input_text">#000000</color>
+<!--    app colors     -->
+    <color name="background_main">#100012</color>
+    <color name="icon_shade">#FB6F92</color>
+    <color name="text_primary">#ffffff</color>
+    <color name="input_hint">#F0F0F0</color>
+    <color name="input_text">#FFFFFF</color>
 </resources>
