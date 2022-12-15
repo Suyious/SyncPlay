@@ -43,24 +43,26 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:layout_marginBottom="10dp"
         android:textColorHint="@color/input_hint"
-        app:boxBackgroundColor="@color/white"
+        app:boxBackgroundColor="@color/background_main"
         app:boxCornerRadiusBottomEnd="7dp"
         app:boxCornerRadiusBottomStart="7dp"
         app:boxCornerRadiusTopEnd="7dp"
         app:boxCornerRadiusTopStart="7dp"
-        app:boxStrokeColor="@color/black"
-        app:boxStrokeWidth="1.5dp"
-        app:errorTextColor="@color/white"
+        app:boxStrokeWidth="1dp"
+        app:errorTextColor="@color/input_text_error"
         app:hintEnabled="false"
+        app:endIconDrawable="@drawable/ic_round_done_24"
+        app:endIconMode="custom"
         app:hintTextColor="@color/input_hint"
         app:layout_constraintEnd_toEndOf="@id/marginEnd"
         app:layout_constraintStart_toStartOf="@id/marginStart"
         app:layout_constraintTop_toBottomOf="@id/text_join"
         app:layout_constraintVertical_chainStyle="packed"
         app:startIconDrawable="@drawable/ic_round_link_24"
-        app:startIconTint="@color/white">
+        app:startIconTint="@color/icon_tint">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -70,6 +72,50 @@
             android:textColor="@color/input_text"
             android:textColorHint="#757575" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvRecent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recent"
+        android:textColor="@color/text_primary"
+        android:textSize="13sp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="@id/marginStart"
+        app:layout_constraintTop_toBottomOf="@id/inputJoinCode" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRecent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent=".18"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/marginStart"
+        app:layout_constraintEnd_toEndOf="@id/marginEnd"
+        app:layout_constraintTop_toBottomOf="@id/tvRecent"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvLibrary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/library"
+        android:textSize="13sp"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/text_primary"
+        app:layout_constraintStart_toStartOf="@id/marginStart"
+        app:layout_constraintTop_toBottomOf="@id/rvRecent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvLibrary"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent=".18"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/marginStart"
+        app:layout_constraintEnd_toEndOf="@id/marginEnd"
+        app:layout_constraintTop_toBottomOf="@id/tvLibrary"
+        android:layout_marginTop="16dp"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/marginStart"
