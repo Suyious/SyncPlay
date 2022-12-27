@@ -54,8 +54,6 @@
         app:boxStrokeWidth="1dp"
         app:errorTextColor="@color/input_text_error"
         app:hintEnabled="false"
-        app:endIconDrawable="@drawable/ic_round_done_24"
-        app:endIconMode="custom"
         app:hintTextColor="@color/input_hint"
         app:layout_constraintEnd_toEndOf="@id/marginEnd"
         app:layout_constraintStart_toStartOf="@id/marginStart"
@@ -67,6 +65,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_round_done_24"
             android:hint="@string/enter_invite_code"
             android:minHeight="52dp"
             android:textColor="@color/input_text"

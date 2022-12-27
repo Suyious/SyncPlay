@@ -16,4 +16,9 @@
     <color name="input_text">#000000</color>
     <color name="input_text_error">#A30648</color>
     <color name="icon_tint">#8FFB6F92</color>
+    <color name="tab_bg1">#FB6F92</color>
+    <color name="tab_bg2">#1A640019</color>
+    <color name="border">#33000000</color>
+    <color name="separator">#33000000</color>
+    <color name="et_hint">#646464</color>
 </resources>
